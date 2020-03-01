@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+#game-container {
+    background-image: url("./images/dirt.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mole {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 128px;
+    height: 128px;
+    
+    /* prevent dragging */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+}
+#scoreboard-container {
+    position: absolute;
+    top: 8px;
+    right:16px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+}
